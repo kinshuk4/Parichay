@@ -1,0 +1,7 @@
+files:
+  fileStructure:
+    formatType: DELIMITED
+    delimiter: ","
+    inputFormat: abc
+    delimitedColumns: isdn,age
+  path: /Users/kchandra/Lyf/Kode/SCM/Github/Zeotap/Parichay/src/main/resources/abc.csv

@@ -2,6 +2,7 @@ package com.vaani.parichay.model;
 
 import com.vaani.parichay.model.ParichayFile;
 import lombok.ToString;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import java.util.List;
 
@@ -18,5 +19,9 @@ public class ParichayYamlSetting {
 
     public void setFiles(List<ParichayFile> files) {
         this.files = files;
+    }
+
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
     }
 }

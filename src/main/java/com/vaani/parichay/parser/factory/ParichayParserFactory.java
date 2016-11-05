@@ -1,6 +1,7 @@
 package com.vaani.parichay.parser.factory;
 
 import com.vaani.parichay.model.ParichayFile;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /**
  * Created by kchandra on 12/08/16.
@@ -22,6 +23,10 @@ public class ParichayParserFactory<T> {
                 return new ParichayCsvParser<T>(this.getType());
         }
         return null;
+    }
+
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
     }
 
 }

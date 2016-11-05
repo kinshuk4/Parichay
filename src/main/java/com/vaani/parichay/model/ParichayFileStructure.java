@@ -1,11 +1,12 @@
 package com.vaani.parichay.model;
 
 import lombok.ToString;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /**
  * Created by kchandra on 12/08/16.
  */
-@ToString
+
 public class ParichayFileStructure {
     public ParichayFormatType formatType;
     public String delimiter;
@@ -42,5 +43,9 @@ public class ParichayFileStructure {
 
     public void setInputFormat(String inputFormat) {
         this.inputFormat = inputFormat;
+    }
+
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
     }
 }
